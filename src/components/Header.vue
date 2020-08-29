@@ -4,6 +4,7 @@
       v-model="drawer"
       absolute
       temporary
+      width="20%"
     >
       <v-list
         nav
@@ -17,14 +18,35 @@
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>ホーム</v-list-item-title>
           </v-list-item>
 
           <v-list-item @click="toAboutMe">
             <v-list-item-icon>
               <v-icon>mdi-account</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>About Me</v-list-item-title>
+            <v-list-item-title>私について</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item @click="toDevs">
+            <v-list-item-icon>
+              <v-icon>mdi-tools</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>開発経験</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item @click="toMyStudy">
+            <v-list-item-icon>
+              <v-icon>mdi-notebook</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>研究について</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item @click="toSchoolDays">
+            <v-list-item-icon>
+              <v-icon>mdi-school</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>学生時代経験したこと</v-list-item-title>
           </v-list-item>
 
         </v-list-item-group>
@@ -56,6 +78,15 @@
       },
       toHome() {
         this.$router.push("/");
+      },
+      toDevs() {
+        this.$router.push("/devs");
+      },
+      toMyStudy() {
+        this.$router.push("/mystudy");
+      },
+      toSchoolDays() {
+        this.$router.push("/schoolDays");
       }
     },
   }

@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h2>自己紹介ページ</h2>
+    <h2>開発経験</h2>
   </div>
 </template>
