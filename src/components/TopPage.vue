@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>top page</h2>
-    <router-link to="/mypage">mypageへ</router-link>
+    <h2>杉本健也のポートフォリオサイト</h2>
   </div>
 </template>
