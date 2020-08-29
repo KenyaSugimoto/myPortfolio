@@ -49,7 +49,7 @@
             <v-list-item-title>学生時代経験したこと</v-list-item-title>
           </v-list-item>
 
-          <hr>
+          <hr><br>
 
           <v-list-item @click="toGithub">
             <v-list-item-icon>
