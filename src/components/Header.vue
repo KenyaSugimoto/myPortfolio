@@ -49,6 +49,15 @@
             <v-list-item-title>学生時代経験したこと</v-list-item-title>
           </v-list-item>
 
+          <hr>
+
+          <v-list-item @click="toGithub">
+            <v-list-item-icon>
+              <v-icon>mdi-github</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>GitHub <v-icon small>mdi-checkbox-multiple-blank-outline</v-icon></v-list-item-title>
+          </v-list-item>
+
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -87,6 +96,9 @@
       },
       toSchoolDays() {
         this.$router.push("/schoolDays");
+      },
+      toGithub() {
+        window.open('https://github.com/KenyaSugimoto', '_blank');
       }
     },
   }
