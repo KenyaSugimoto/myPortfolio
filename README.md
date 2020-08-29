@@ -1,24 +1,12 @@
-# mypage
+# 杉本健也のポートフォリオサイト
 
-## Project setup
-```
-npm install
-```
+## 自己紹介
+### 所属
+- 立命館大学大学院 情報理工学研究科 情報理工学専攻 計算機科学コース 1年
+- 情報ネットワーキング研究室 所属
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 出身
+- 大分県別府市♨︎ 出身
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 趣味
+- 野球
