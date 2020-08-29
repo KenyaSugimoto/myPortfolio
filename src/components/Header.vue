@@ -55,12 +55,12 @@
     <header>
       <v-app-bar
         app
-        color="#E3F2FD"
+        color="#C8E6C9"
       >
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
       <div class="d-flex align-center logo">
-          <v-img src="../assets/myLogo.png" @click="toHome" />
+        <v-img src="../assets/myLogo.png" @click="toHome" />
       </div>
       </v-app-bar>
     </header>
@@ -93,6 +93,7 @@
 </script>
 
 <style scoped>
+
 .logo :hover {
   cursor: pointer;
 }
