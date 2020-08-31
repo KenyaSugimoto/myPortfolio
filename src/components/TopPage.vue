@@ -3,9 +3,9 @@
     <v-container>
       <v-row><v-col><h2>杉本健也のポートフォリオサイト</h2></v-col></v-row>
       <v-row><v-col><h3>ようこそ！</h3></v-col></v-row>
-      <v-row justify="center">
-        <v-col cols="7">
-          <v-carousel>
+      <v-row justify="center" class="slide">
+        <v-col cols="8">
+          <v-carousel height="700px">
             <v-carousel-item
               v-for="(item,i) in items"
               :key="i"
@@ -26,11 +26,16 @@ export default {
   data () {
     return {
       items: [
-        {src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'},
-        {src: "./../assets/baseball.jpg"},
-        {src: "./../assets/animal.jpg"},
+        {src: require("./../assets/panpies.jpg")},
+        {src: require("./../assets/baseball.jpg")},
+        {src: require("./../assets/animal.png")},
+        {src: require("./../assets/animal2.jpg")},
       ],
     }
   },
 }
 </script>
+
+<style scoped>
+
+</style>
