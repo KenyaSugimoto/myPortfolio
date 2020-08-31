@@ -50,6 +50,14 @@ export default {
           src: require("./../assets/onji.jpg"),
           episode: "学部で成績優秀者（上位2%以内）に選ばれた時の写真です。右の友達と一緒に勉強して2人で選ばれることができました！"
         },
+        {
+          src: require("./../assets/auth.jpg"),
+          episode: "オーストラリア留学に行った時の写真です。ホストファミリーとその友人家族とディナーをしました。"
+        },
+        {
+          src: require("./../assets/q1.jpg"),
+          episode: "南半球で一番高いビルであるQ1のスカイウォーク体験をしました。怖かったです。"
+        },
       ],
     }
   },
