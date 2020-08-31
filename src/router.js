@@ -5,7 +5,8 @@ const TopPage = () => import("./components/TopPage");
 const MyPage = () => import("./components/MyPage");
 const Develop = () => import("./components/Develop");
 const MyStudy = () => import("./components/MyStudy");
-const SchoolDays = () => import("./components/SchoolDays.vue");
+const SchoolDays = () => import("./components/SchoolDays");
+const Contact = () => import("./components/Contact");
 
 //Vue Routerの利用宣言
 Vue.use(Router)
@@ -41,6 +42,12 @@ export default new Router({
       path: "/schoolDays",
       components: {
         default: SchoolDays,
+      }
+    },
+    {
+      path: "/Contact",
+      components: {
+        default: Contact,
       }
     },
 

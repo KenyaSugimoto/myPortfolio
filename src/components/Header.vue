@@ -48,6 +48,13 @@
             <v-list-item-title>学生時代経験したこと</v-list-item-title>
           </v-list-item>
 
+          <v-list-item @click="toContact">
+            <v-list-item-icon>
+              <v-icon>mdi-email-send</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>お問い合わせ</v-list-item-title>
+          </v-list-item>
+
           <hr><br>
 
           <v-list-item @click="toGithub">
@@ -98,7 +105,10 @@
       },
       toGithub() {
         window.open('https://github.com/KenyaSugimoto', '_blank');
-      }
+      },
+      toContact() {
+        this.$router.push("/contact")
+      },
     },
   }
 </script>

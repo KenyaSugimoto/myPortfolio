@@ -1,0 +1,5 @@
+<template>
+  <div>
+    <h2>お問い合わせフォーム</h2>
+  </div>
+</template>
