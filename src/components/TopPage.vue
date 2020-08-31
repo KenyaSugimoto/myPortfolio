@@ -1,9 +1,9 @@
 <template>
   <div>
     <v-container>
-      <v-row><v-col><h2>ポートフォリオサイト</h2></v-col></v-row>
+      <v-row><v-col><h2>ポートフォリオサイト</h2><hr></v-col></v-row>
       <v-row><v-col><h3>ようこそ！</h3></v-col></v-row>
-      <v-row><v-col><h3>「私」を表現する写真</h3></v-col></v-row>
+      <v-row><v-col><h3>「私」を表す写真たち</h3></v-col></v-row>
       <v-row justify="center" class="slide">
         <v-col cols="8">
           <v-carousel height="700px" show-arrows-on-hover cycle>
@@ -45,6 +45,10 @@ export default {
         {
           src: require("./../assets/animal2.jpg"),
           episode: "猫に癒されたかったので岡山県の真鍋島（猫島）に行きました！"
+        },
+        {
+          src: require("./../assets/onji.jpg"),
+          episode: "学部で成績優秀者（上位2%以内）に選ばれた時の写真です。右の友達と一緒に勉強して2人で選ばれることができました！"
         },
       ],
     }
