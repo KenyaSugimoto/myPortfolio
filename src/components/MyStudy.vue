@@ -75,7 +75,7 @@
 
 
       <div v-if="tab == 2">
-        <v-row><v-col><h2>修士研究</h2></v-col></v-row>
+        <v-row><v-col><h2>豪雪地帯における除雪オペレータ習熟支援システムの研究開発</h2></v-col></v-row>
 
       </div>
     </v-container>
