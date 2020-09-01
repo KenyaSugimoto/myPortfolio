@@ -7,7 +7,7 @@ const Develop = () => import("./components/Develop");
 const MyStudy = () => import("./components/MyStudy");
 const SchoolDays = () => import("./components/SchoolDays");
 const Contact = () => import("./components/Contact");
-
+const SendComplete = () => import("./components/SendComplete");
 //Vue Routerの利用宣言
 Vue.use(Router)
 
@@ -48,6 +48,12 @@ export default new Router({
       path: "/Contact",
       components: {
         default: Contact,
+      }
+    },
+    {
+      path: "/sendComplete",
+      components: {
+        default: SendComplete,
       }
     },
 
