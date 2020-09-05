@@ -55,7 +55,14 @@
             <v-list-item-title>お問い合わせ</v-list-item-title>
           </v-list-item>
 
-          <hr><br>
+          <v-list-item @click="toCovid19">
+            <v-list-item-icon>
+              <v-icon>mdi-alert-rhombus</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>感染者</v-list-item-title>
+          </v-list-item>
+
+          <hr>
 
           <v-list-item @click="toGithub">
             <v-list-item-icon>
@@ -107,7 +114,10 @@
         window.open('https://github.com/KenyaSugimoto', '_blank');
       },
       toContact() {
-        this.$router.push("/contact")
+        this.$router.push("/contact");
+      },
+      toCovid19() {
+        this.$router.push("/covid19");
       },
     },
   }

@@ -8,6 +8,7 @@ const MyStudy = () => import("./components/MyStudy");
 const SchoolDays = () => import("./components/SchoolDays");
 const Contact = () => import("./components/Contact");
 const SendComplete = () => import("./components/SendComplete");
+const Covid19 = () => import("./components/Covid19");
 //Vue Routerの利用宣言
 Vue.use(Router)
 
@@ -54,6 +55,12 @@ export default new Router({
       path: "/sendComplete",
       components: {
         default: SendComplete,
+      }
+    },
+    {
+      path: "/covid19",
+      components: {
+        default: Covid19,
       }
     },
 
