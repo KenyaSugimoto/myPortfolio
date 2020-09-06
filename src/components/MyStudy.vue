@@ -4,8 +4,8 @@
       <v-row><v-col><h2>私の研究について</h2></v-col></v-row>
 
       <v-row justify="center">
-        <v-col cols="6">
-          <v-tabs v-model="tab">
+        <v-col cols="10">
+          <v-tabs v-model="tab" background-color="#E0F2F1" color="#2c3e50" grow>
             <v-row>
               <v-col><v-tab class="tab">学部3年</v-tab></v-col>
               <v-col><v-tab class="tab">卒業研究</v-tab></v-col>
@@ -14,8 +14,6 @@
           </v-tabs>
         </v-col>
       </v-row>
-
-
 
       <div v-if="tab == 0">
         <v-row><v-col><h2>除雪車運行支援タブレットシステム</h2></v-col></v-row>
