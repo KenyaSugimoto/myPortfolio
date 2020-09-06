@@ -1,28 +1,63 @@
 <template>
   <div>
     <v-container>
-      <v-row><v-col><h2>感染者数</h2></v-col></v-row>
+      <v-row><v-col><h2>今日までのコロナ感染者 統計情報</h2></v-col></v-row>
 
-      <template v-if="displayFlag">
-        <v-select :items="continents" label="continents" v-model="selectedContinent" />
+      <v-row justify="center">
+        <v-col cols="12">
+          <br><br>
+          <template v-if="displayFlag">
+            <v-row justify="space-between">
+              <!-- グラフ部分 -->
+              <v-col cols="7">
+                <v-data-table
+                  :headers="headers"
+                  :items="targetCountries"
+                  :items-per-page="15"
+                  class="elevation-1"
+                ></v-data-table>
+              </v-col>
+              <!-- 絞り込み部分 -->
+              <v-col cols="4">
+                <v-card color="#E0F7FA">
+                  <v-row justify="center">
+                    <v-col cols="10">
+                      <br><h3>絞り込み条件<hr></h3>
+                    </v-col>
+                    <v-col cols="10">
+                      <v-select
+                        :items="continents"
+                        label="地域を選択"
+                        v-model="selectedContinent"
+                        color="green"
+                        />
+                    </v-col>
+                    <v-col>
+                      <v-btn @click="narrowDown">絞り込む</v-btn>
+                    </v-col>
+                  </v-row>
+                </v-card>
+              </v-col>
+            </v-row>
 
-        <v-data-table
-          :headers="headers"
-          :items="targetCountries"
-          :items-per-page="15"
-          class="elevation-1"
-        ></v-data-table>
-      </template>
-      <template v-else>
-        <v-progress-circular
-          :size="70"
-          :width="7"
-          color="green"
-          indeterminate
-        />
-        <br><br>
-        <h3>データ取得中...</h3>
-      </template>
+            <br><br><br>
+          </template>
+
+          <!-- ローディング画面 -->
+          <template v-else>
+            <br><br>
+            <v-progress-circular
+              :size="70"
+              :width="7"
+              color="green"
+              indeterminate
+            />
+            <br><br>
+            <h3>データ取得中...</h3>
+          </template>
+        </v-col>
+      </v-row>
+
 
     </v-container>
 
@@ -40,11 +75,12 @@ export default {
       historyUrl: "https://covid-193.p.rapidapi.com/history?country=Japan",
       displayFlag: false,
       headers: [
-        { text: 'Country Name', align: 'start', value: 'name',},
-        { text: 'Population', value: 'population' },
-        { text: 'Total', value: 'total' },
-        { text: 'Recovered', value: 'recovered' },
-        { text: 'Deaths', value: 'deaths' },
+        { text: '国名', align: 'start', value: 'name',},
+        { text: '人口', value: 'population' },
+        { text: '新規感染者', value: 'new' },
+        { text: '回復した人', value: 'recovered' },
+        { text: '感染者合計', value: 'total' },
+        { text: '死亡人数', value: 'deaths' },
       ],
       selectedContinent: null,
     }
@@ -79,8 +115,9 @@ export default {
         let tempObj = {};
         tempObj["name"] = country.country;
         tempObj["population"] = country.population;
-        tempObj["total"] = country.population;
+        tempObj["total"] = country.cases.total;
         tempObj["recovered"] = country.cases.recovered;
+        tempObj["new"] = country.cases.new;
         tempObj["deaths"] = country.deaths.total;
         return tempObj;
       });
@@ -106,19 +143,19 @@ export default {
         let tempObj = {};
         tempObj["name"] = country.country;
         tempObj["population"] = country.population;
-        tempObj["total"] = country.population;
+        tempObj["total"] = country.cases.total;
         tempObj["recovered"] = country.cases.recovered;
+        tempObj["new"] = country.cases.new;
         tempObj["deaths"] = country.deaths.total;
         return tempObj;
       });
       this.$store.commit("updateTargetCountriesInfo", asia);
     },
-  },
-  watch: {
-    selectedContinent: function() {
+    narrowDown() {
       this.group(this.selectedContinent);
-    }
+    },
   },
+
 }
 </script>
 
