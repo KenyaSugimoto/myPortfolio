@@ -3,7 +3,6 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-
 export default new Vuex.Store({
   state: {
     targetCountriesInfo: null,
@@ -38,5 +37,4 @@ export default new Vuex.Store({
       state.continents = continents;
     },
   },
-
 });

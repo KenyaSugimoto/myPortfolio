@@ -132,6 +132,10 @@ export default {
       this.$store.commit("updateContinents", continents);
 
     });
+    // this.$store.dispatch("getCovidInfo", this.statisticsUrl).then(() => {
+    //   this.displayFlag = true;
+    // });
+
   },
   methods: {
     group(selectedContinent) {
