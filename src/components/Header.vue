@@ -10,9 +10,7 @@
         nav
         dense
       >
-        <v-list-item-group
-          active-class="deep-purple--text text--accent-4"
-        >
+        <v-list-item-group active-class="deep-purple--text text--accent-4">
           <v-list-item @click="toHome">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
@@ -75,14 +73,11 @@
       </v-list>
     </v-navigation-drawer>
     <header>
-      <v-app-bar
-        app
-        color="#C8E6C9"
-      >
+      <v-app-bar app color="#C8E6C9">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
       <div class="d-flex align-center logo">
-        <v-img src="../assets/myLogo.png" @click="toHome" />
+        <v-img src="../assets/logo.png" @click="toHome" />
       </div>
       </v-app-bar>
     </header>
