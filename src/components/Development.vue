@@ -7,6 +7,7 @@
         <h3>Gitの芝生</h3>
         <!-- GitHubの芝生 -->
         <v-img src="https://grass-graph.moshimo.works/images/KenyaSugimoto.png" />
+        <v-img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kenyaSugimoto&layout=compact" />
       </v-col>
 
     </v-row>

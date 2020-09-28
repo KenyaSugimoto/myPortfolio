@@ -3,7 +3,7 @@ import Router from "vue-router";
 
 const TopPage = () => import("./components/TopPage");
 const MyPage = () => import("./components/MyPage");
-const Develop = () => import("./components/Develop");
+const Development = () => import("./components/Development");
 const MyStudy = () => import("./components/MyStudy");
 const SchoolDays = () => import("./components/SchoolDays");
 const Contact = () => import("./components/Contact");
@@ -30,7 +30,7 @@ export default new Router({
     {
       path: "/devs",
       components: {
-        default: Develop,
+        default: Development,
       }
     },
     {
