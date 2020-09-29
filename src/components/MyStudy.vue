@@ -57,18 +57,19 @@
         <v-row>
           <v-col>
             <v-card>
-              <iframe src="//www.slideshare.net/slideshow/embed_code/key/3BdJ5C6RhO1zJc" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"></div>
+              <iframe src="//www.slideshare.net/slideshow/embed_code/key/3BdJ5C6RhO1zJc" width="595" height="485" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen /><div style="margin-bottom:5px"></div>
             </v-card>
           </v-col>
         </v-row>
 
-        <v-row>
+        <!-- 論文 -->
+        <!-- <v-row>
           <v-col>
             <v-card>
               <iframe src="https://drive.google.com/file/d/1UqlsYZOcpNniTMUyskKRrP_UFezloAAW/preview" width="600" height="800"></iframe>
             </v-card>
           </v-col>
-        </v-row>
+        </v-row> -->
       </div>
 
 
