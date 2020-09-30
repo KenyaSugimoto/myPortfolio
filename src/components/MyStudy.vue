@@ -25,7 +25,7 @@
               <v-row>
                 <v-col>
                   <v-card>
-                    <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/2CTZlxcGTTA?start=42" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/2CTZlxcGTTA?start=42" title="movie" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h3>総務省動画チャンネル（Youtube）より</h3>
                   </v-card>
                 </v-col>
@@ -39,7 +39,7 @@
               <v-row>
                 <v-col>
                   <v-card>
-                    <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/OCWVnn6x0b0?start=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/OCWVnn6x0b0?start=0" title="movie" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h3>KDDIofficial（Youtube）より</h3>
                   </v-card>
                 </v-col>
