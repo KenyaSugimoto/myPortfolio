@@ -7,7 +7,7 @@
           <p>{{formatedToday}}現在</p>
           <br>
           <template v-if="displayFlag">
-            <v-row justify="space-between">
+            <v-row justify="center">
               <!-- グラフ部分 -->
               <v-col cols="7">
                 <v-data-table
@@ -17,9 +17,13 @@
                   class="elevation-1"
                 ></v-data-table>
               </v-col>
+
               <!-- 絞り込み部分 -->
-              <v-col cols="4">
-                <v-card color="#E0F7FA">
+              <v-col cols="3">
+                <v-card
+                  color="#E0F7FA"
+                  outlined
+                >
                   <v-row justify="center">
                     <v-col cols="10">
                       <br><h3>絞り込み条件<hr></h3>

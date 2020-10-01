@@ -25,13 +25,6 @@
             <v-list-item-title>私について</v-list-item-title>
           </v-list-item>
 
-          <v-list-item @click="toDevs">
-            <v-list-item-icon>
-              <v-icon>mdi-tools</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>開発経験</v-list-item-title>
-          </v-list-item>
-
           <v-list-item @click="toMyStudy">
             <v-list-item-icon>
               <v-icon>mdi-notebook</v-icon>
@@ -39,11 +32,18 @@
             <v-list-item-title>研究について</v-list-item-title>
           </v-list-item>
 
+          <v-list-item @click="toDevs">
+            <v-list-item-icon>
+              <v-icon>mdi-tools</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>開発経験</v-list-item-title>
+          </v-list-item>
+
           <v-list-item @click="toSchoolDays">
             <v-list-item-icon>
               <v-icon>mdi-school</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>学生時代本気で取り組んだこと</v-list-item-title>
+            <v-list-item-title>本気で取り組んだこと</v-list-item-title>
           </v-list-item>
 
           <v-list-item @click="toContact">

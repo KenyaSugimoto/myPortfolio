@@ -12,7 +12,6 @@
         >
           <!-- カルーセル（画像） -->
           <v-carousel
-            cycle
             hide-delimiters
           >
             <v-carousel-item
@@ -66,7 +65,6 @@
         >
           <!-- カルーセル（画像） -->
           <v-carousel
-            cycle
             hide-delimiters
           >
             <v-carousel-item
@@ -107,6 +105,12 @@
                 「他のチームに負けたくない→勝つためには開発効率が重要→開発効率を上げるために恥を捨てる」
                 のように行動できたので、自分の負けず嫌いな部分が出せたかなと思いました。
               </h4>
+              <v-btn text class="button">
+                <v-img
+                  src="@/assets/title_progcafe.svg"
+                  width="150"
+                />へ
+              </v-btn>
             </v-col>
           </v-row>
 
@@ -146,12 +150,15 @@ export default {
 .headline-text {
   margin-bottom: 8px;
   text-align: start;
-
 }
 .content-text {
   color: #5d6972;
   margin-bottom: 24px;
   text-align: start;
   word-break: keep-all;
+}
+
+.button {
+  margin-bottom: 16px;
 }
 </style>

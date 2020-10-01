@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container>
-      <v-row><v-col><h2>学生時代本気で取り組んだこと</h2></v-col></v-row>
+      <v-row><v-col><h2>本気で取り組んだこと</h2></v-col></v-row>
 
       <v-row justify="center">
         <!-- 野球 -->
