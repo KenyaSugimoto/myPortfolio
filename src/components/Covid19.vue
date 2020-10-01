@@ -2,10 +2,10 @@
   <div>
     <v-container>
       <v-row><v-col><h2>今日までのコロナ感染者 統計情報</h2></v-col></v-row>
-
       <v-row justify="center">
         <v-col cols="12">
-          <br><br>
+          <p>{{formatedToday}}現在</p>
+          <br>
           <template v-if="displayFlag">
             <v-row justify="space-between">
               <!-- グラフ部分 -->
@@ -83,6 +83,7 @@ export default {
         { text: '死亡人数', value: 'deaths' },
       ],
       selectedContinent: null,
+      today: new Date(),
     }
   },
   computed: {
@@ -98,6 +99,9 @@ export default {
     continents() {
       return this.$store.getters.continents;
     },
+    formatedToday() {
+      return this.today.getFullYear() + "年" + ("00" + (this.today.getMonth() + 1)).slice(-2) + "月" + ("00" + (this.today.getDate())).slice(-2) + "日";
+    }
 
   },
   created() {
