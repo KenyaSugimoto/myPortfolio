@@ -43,7 +43,7 @@
             <v-list-item-icon>
               <v-icon>mdi-school</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>学生時代経験したこと</v-list-item-title>
+            <v-list-item-title>学生時代本気で取り組んだこと</v-list-item-title>
           </v-list-item>
 
           <v-list-item @click="toContact">

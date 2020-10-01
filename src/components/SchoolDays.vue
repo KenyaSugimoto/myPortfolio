@@ -1,110 +1,73 @@
 <template>
   <div>
     <v-container>
-      <v-row><v-col><h2>学生時代経験したこと</h2></v-col></v-row>
+      <v-row><v-col><h2>学生時代本気で取り組んだこと</h2></v-col></v-row>
 
       <v-row justify="center">
-        <v-col cols="4">
+        <!-- 野球 -->
+        <v-col cols="8">
           <v-card
             class="mx-auto"
-            max-width="344"
+            max-width="800"
           >
             <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
+              src="@/assets/baseball.jpg"
+              max-height="450"
             ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
+            <h2 class="title-text">野球</h2>
             <v-card-subtitle>
-              1,000 miles of wonder
+              <p>軟式野球サークルの関西選抜（約4000人中12人選出）の投手として選出</p>
+              <p>軟式野球サークルの会長として、弱小チームから勝てるチームへ</p>
             </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn text>Share</v-btn>
-
-              <v-btn
-                color="purple"
-                text
-              >
-                Explore
-              </v-btn>
-
-              <v-spacer></v-spacer>
-
-              <v-btn
-                icon
-                @click="show = !show"
-              >
-                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-              </v-btn>
-            </v-card-actions>
-
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
-
-                <v-card-text>
-                  I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                </v-card-text>
-              </div>
-            </v-expand-transition>
           </v-card>
         </v-col>
-        <v-col cols="4">
+
+        <!-- 大学の授業 -->
+        <v-col cols="8">
           <v-card
             class="mx-auto"
-            max-width="344"
+            max-width="800"
           >
             <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-              height="200px"
+              src="@/assets/onji.jpg"
+              max-height="450"
             ></v-img>
-
-            <v-card-title>
-              Top western road trips
-            </v-card-title>
-
+            <h2 class="title-text">大学の授業</h2>
             <v-card-subtitle>
-              1,000 miles of wonder
+              <p>学部の成績優秀者に選出（成績上位2%以内）</p>
+              <p>成績優秀者を一緒に目指した友達と2人で選出</p>
             </v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn text>Share</v-btn>
-
-              <v-btn
-                color="purple"
-                text
-              >
-                Explore
-              </v-btn>
-
-              <v-spacer></v-spacer>
-
-              <v-btn
-                icon
-                @click="show = !show"
-              >
-                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-              </v-btn>
-            </v-card-actions>
-
-            <v-expand-transition>
-              <div v-show="show">
-                <v-divider></v-divider>
-
-                <v-card-text>
-                  I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-                </v-card-text>
-              </div>
-            </v-expand-transition>
           </v-card>
         </v-col>
+
+        <!-- 謎解き -->
+        <v-col cols="8">
+          <v-card
+            class="mx-auto"
+            max-width="800"
+          >
+            <v-img
+              src="@/assets/hakase.jpg"
+              max-height="450"
+            ></v-img>
+            <h2 class="title-text">謎解きイベント開催</h2>
+            <v-card-subtitle>
+              <p>京都のレンタルスペースや大学の学祭で開催</p>
+              <p>3日間で合計300名動員・満足度95%を達成</p>
+            </v-card-subtitle>
+          </v-card>
+        </v-col>
+
       </v-row>
 
 
     </v-container>
   </div>
 </template>
+
+<style scoped>
+.title-text {
+  margin-top: 16px;
+  color: #2c3e50;
+}
+</style>
