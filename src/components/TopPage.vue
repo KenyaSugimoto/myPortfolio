@@ -1,22 +1,29 @@
 <template>
   <div>
     <v-container>
-      <v-row><v-col><h2>ポートフォリオサイト</h2><hr></v-col></v-row>
-      <v-row><v-col><h3>ようこそ！</h3></v-col></v-row>
-      <v-row><v-col><h3>「私」を表す写真たち</h3></v-col></v-row>
       <v-row justify="center" class="slide">
-        <v-col cols="8">
-          <v-carousel height="700px" show-arrows-on-hover cycle>
-            <v-carousel-item
-              v-for="(item,i) in items"
-              :key="i"
-              :src="item.src"
-              reverse-transition="fade-transition"
-              transition="fade-transition"
+        <v-col cols="10">
+          <h1 class="title-text">ポートフォリオサイト</h1><hr>
+          <h2 class="title-text">「私」を表す写真</h2>
+        </v-col>
+        <v-col cols="6">
+          <v-card flat>
+            <v-carousel
+              cycle
+              hide-delimiters
             >
-            <div class="episode"><b>{{item.episode}}</b></div>
-            </v-carousel-item>
-          </v-carousel>
+              <v-carousel-item
+                v-for="(item,i) in items"
+                :key="i"
+                :src="item.src"
+                reverse-transition="fade-transition"
+                transition="fade-transition"
+              >
+              <div class="episode"><b>{{item.episode}}</b></div>
+              </v-carousel-item>
+            </v-carousel>
+
+          </v-card>
         </v-col>
       </v-row>
       <v-row><v-col></v-col></v-row>
@@ -48,7 +55,7 @@ export default {
         },
         {
           src: require("@/assets/onji.jpg"),
-          episode: "学部で成績優秀者（上位2%以内）に選ばれた時の写真です。右の友達と一緒に勉強して2人で選ばれることができました！"
+          episode: "学部で成績優秀者（上位2%以内）に選ばれた時の写真です。友達(右)と一緒に勉強して2人で選ばれることができました！"
         },
         {
           src: require("@/assets/auth.jpg"),
@@ -69,5 +76,11 @@ export default {
   background-color: #c8e6c9c5;
   color: rgb(46, 45, 45);
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  word-break: keep-all;
+}
+.title-text {
+  margin: 16px;
+  color: #2c3e50;
+  font-weight: bold;
 }
 </style>

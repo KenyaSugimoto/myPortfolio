@@ -2,15 +2,12 @@
   <div>
     <v-navigation-drawer
       v-model="drawer"
-      absolute
+      fixed
       temporary
       width="20%"
     >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group active-class="deep-purple--text text--accent-4">
+      <v-list nav>
+        <v-list-item-group color="#cf7500">
           <v-list-item @click="toHome">
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
@@ -72,6 +69,7 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
+
     <header>
       <v-app-bar app color="#C8E6C9">
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
