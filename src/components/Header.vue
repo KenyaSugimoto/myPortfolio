@@ -43,18 +43,18 @@
             <v-list-item-title>本気で取り組んだこと</v-list-item-title>
           </v-list-item>
 
-          <v-list-item @click="toContact">
+          <!-- <v-list-item @click="toContact">
             <v-list-item-icon>
               <v-icon>mdi-email-send</v-icon>
             </v-list-item-icon>
             <v-list-item-title>お問い合わせ</v-list-item-title>
-          </v-list-item>
+          </v-list-item> -->
 
           <v-list-item @click="toCovid19">
             <v-list-item-icon>
               <v-icon>mdi-alert-rhombus</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>感染者</v-list-item-title>
+            <v-list-item-title>Covid19感染者 統計情報</v-list-item-title>
           </v-list-item>
 
           <hr>
@@ -71,11 +71,18 @@
     </v-navigation-drawer>
 
     <header>
-      <v-app-bar app color="#C8E6C9">
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-app-bar
+        app
+        color="#91d18b"
+        max-height="100"
+      >
+
+      <v-btn x-large text @click="drawer = true">
+        <v-icon x-large>mdi-menu</v-icon>
+      </v-btn>
 
       <div class="d-flex align-center logo">
-        <v-img src="../assets/logo.png" @click="toHome" />
+        <v-img src="@/assets/KenyaSugimotoLogo.png" @click="toHome" />
       </div>
       </v-app-bar>
     </header>

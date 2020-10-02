@@ -21,7 +21,7 @@
               <!-- 絞り込み部分 -->
               <v-col cols="3">
                 <v-card
-                  color="#E0F7FA"
+                  color="#dddddd"
                   outlined
                 >
                   <v-row justify="center">
