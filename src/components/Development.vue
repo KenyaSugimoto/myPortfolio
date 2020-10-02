@@ -105,7 +105,11 @@
                 「他のチームに負けたくない→勝つためには開発効率が重要→開発効率を上げるために恥を捨てる」
                 のように行動できたので、自分の負けず嫌いな部分が出せたかなと思いました。
               </h4>
-              <v-btn text class="button">
+              <v-btn
+                text
+                class="button"
+                @click="toProgCafe"
+              >
                 <v-img
                   src="@/assets/title_progcafe.svg"
                   width="150"
@@ -136,6 +140,11 @@ export default {
       ],
       cardHeight: 1200,
       cardMaxWidth: 800,
+    }
+  },
+  methods: {
+    toProgCafe() {
+      window.open("https://prog-cafe.web.app/", "_blank");
     }
   }
 }
