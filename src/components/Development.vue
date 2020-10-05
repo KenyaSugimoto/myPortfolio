@@ -61,7 +61,7 @@
         <v-card
           class="mx-auto"
           :max-width="cardMaxWidth"
-          :height="cardHeight"
+          :max-height="cardMaxHeight"
         >
           <!-- カルーセル（画像） -->
           <v-carousel
@@ -138,7 +138,7 @@ export default {
         {src: require("@/assets/room.jpg")},
         {src: require("@/assets/devenv.png")}
       ],
-      cardHeight: 1200,
+      cardMaxHeight: 1500,
       cardMaxWidth: 800,
     }
   },
