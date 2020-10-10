@@ -28,8 +28,13 @@
                   <v-row class="index" justify="center"><v-col cols="11"><h2>所属</h2></v-col></v-row>
                   <v-row class="detail" justify="center">
                     <v-col cols="10"><h3>・立命館大学大学院 情報理工学研究科 情報理工学専攻 計算機科学コース 1年</h3></v-col>
-                    <v-col cols="5"><h3>・情報ネットワーキング研究室 所属</h3></v-col>
-                    <v-col cols="5">( <a href="http://www.infonet-labo.org/" target="_blank" text> 研究室のホームページ </a><v-icon small>mdi-checkbox-multiple-blank-outline</v-icon> )</v-col>
+                    <v-col cols="10">
+                      <h3>・情報ネットワーキング研究室 所属</h3>
+                      <v-btn @click="toLabPage" text color="#1a0dab">
+                        <h4>研究室のホームページ</h4>
+                        <v-icon small>mdi-checkbox-multiple-blank-outline</v-icon>
+                      </v-btn>
+                    </v-col>
 
                   </v-row>
                 </div>
@@ -69,6 +74,15 @@
   </v-container>
 </template>
 
+<script>
+export default {
+  methods: {
+    toLabPage() {
+      window.open("http://www.infonet-labo.org/", "_blank");
+    }
+  }
+}
+</script>
 
 <style scoped>
 .index {
