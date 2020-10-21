@@ -11,7 +11,7 @@
             max-width="800"
           >
             <v-img
-              src="@/assets/baseball.jpg"
+              src="http://sugimoto-kenya.floppy.jp/images/baseball.jpg"
               max-height="450"
             ></v-img>
             <h2 class="title-text">野球</h2>
@@ -29,7 +29,7 @@
             max-width="800"
           >
             <v-img
-              src="@/assets/onji.jpg"
+              src="http://sugimoto-kenya.floppy.jp/images/onji.jpg"
               max-height="450"
             ></v-img>
             <h2 class="title-text">大学の授業</h2>
@@ -47,7 +47,7 @@
             max-width="800"
           >
             <v-img
-              src="@/assets/hakase.jpg"
+              src="http://sugimoto-kenya.floppy.jp/images/hakase.jpg"
               max-height="450"
             ></v-img>
             <h2 class="title-text">謎解きイベント開催</h2>

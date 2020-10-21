@@ -111,7 +111,7 @@
                 @click="toProgCafe"
               >
                 <v-img
-                  src="@/assets/title_progcafe.svg"
+                  src="http://sugimoto-kenya.floppy.jp/images/title_progcafe.svg"
                   width="150"
                 />へ
               </v-btn>
@@ -130,13 +130,13 @@ export default {
   data() {
     return {
       chiebukuroItems: [
-        {src: require("@/assets/chiebukuroLogo.jpg")},
-        {src: require("@/assets/chiebukuro.jpg")}
+        {src: "http://sugimoto-kenya.floppy.jp/images/chiebukuroLogo.jpg"},
+        {src: "http://sugimoto-kenya.floppy.jp/images/chiebukuro.jpg"}
       ],
       progcafeItems: [
-        {src: require("@/assets/progcafe.jpg")},
-        {src: require("@/assets/room.jpg")},
-        {src: require("@/assets/devenv.jpg")}
+        {src: "http://sugimoto-kenya.floppy.jp/images/progcafe.jpg"},
+        {src: "http://sugimoto-kenya.floppy.jp/images/room.jpg"},
+        {src: "http://sugimoto-kenya.floppy.jp/images/devenv.jpg"}
       ],
       cardMaxHeight: 1500,
       cardMaxWidth: 800,
