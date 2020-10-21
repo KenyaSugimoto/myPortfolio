@@ -130,13 +130,13 @@ export default {
   data() {
     return {
       chiebukuroItems: [
-        {src: require("@/assets/chiebukuroLogo.png")},
-        {src: require("@/assets/chiebukuro.png")}
+        {src: require("@/assets/chiebukuroLogo.jpg")},
+        {src: require("@/assets/chiebukuro.jpg")}
       ],
       progcafeItems: [
-        {src: require("@/assets/progcafe.png")},
+        {src: require("@/assets/progcafe.jpg")},
         {src: require("@/assets/room.jpg")},
-        {src: require("@/assets/devenv.png")}
+        {src: require("@/assets/devenv.jpg")}
       ],
       cardMaxHeight: 1500,
       cardMaxWidth: 800,
