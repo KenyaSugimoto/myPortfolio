@@ -11,8 +11,8 @@
           <v-row justify="center">
             <v-col cols="3">
               <br>
-              <v-row><v-img src="../assets/face.jpg" /></v-row>
-              <v-row justify="center"><v-col><v-img src="../assets/ritsumeikan.jpg" /></v-col></v-row>
+              <v-row><v-img src="http://sugimoto-kenya.floppy.jp/images/face.jpg" /></v-row>
+              <v-row justify="center"><v-col><v-img src="http://sugimoto-kenya.floppy.jp/images/ritsumeikan.jpg" /></v-col></v-row>
               <br>
               <v-row justify="center">
                 <v-col cols="6"><v-btn color="orange" text href="https://github.com/KenyaSugimoto" target="_blank"><v-icon>mdi-github</v-icon>GitHub<v-icon small>mdi-checkbox-multiple-blank-outline</v-icon></v-btn></v-col>

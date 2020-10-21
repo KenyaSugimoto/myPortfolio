@@ -82,7 +82,7 @@
       </v-btn>
 
       <div class="d-flex align-center logo">
-        <v-img src="@/assets/KenyaSugimotoLogo.png" @click="toHome" />
+        <v-img src="http://sugimoto-kenya.floppy.jp/images/KenyaSugimotoLogo.png" @click="toHome" />
       </div>
       </v-app-bar>
     </header>
