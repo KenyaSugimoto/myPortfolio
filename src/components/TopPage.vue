@@ -46,7 +46,7 @@ export default {
           episode: "関西の選抜チームの投手として、ナゴヤドームで関東選抜チームと試合をしました。試合にも勝ち、両親の前で全力プレーを見せることができました！"
         },
         {
-          src: require("@/assets/animal.png"),
+          src: require("@/assets/animal.jpg"),
           episode: "動物が大好きです！歩いている動物を見つけると一緒に写真を撮りたくなります！"
         },
         {
